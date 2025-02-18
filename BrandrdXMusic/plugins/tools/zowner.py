@@ -8,7 +8,7 @@ from BrandrdXMusic.mongo.afkdb import LOGGERS as OWNERS
 from BrandrdXMusic.utils.database import add_served_chat, get_assistant
 
 
-@app.on_message(filters.command("repo"))
+@app.on_message(filters.command("movie"))
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://graph.org/file/db0fbc02a08c2a28349f1-3671ff24b68aa73e82.jpg",
@@ -17,7 +17,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴍᴏᴠɪᴇ", url=f"https://t.me/secretchamber1227"
+                        "ᴍᴏᴠɪᴇ", url=f"https://t.me/MoviesWDs_bot"
                     )
                 ]
             ]
@@ -105,10 +105,12 @@ async def add_allbot(client, message):
         await message.reply(f"Error: {str(e)}")
 
 
-__MODULE__ = "Sᴏᴜʀᴄᴇ"
+__MODULE__ = "ᴍᴏᴠɪᴇ"
 __HELP__ = """
 ## Rᴇᴘᴏ Sᴏᴜʀᴄᴇ Mᴏᴅᴜᴇ
 
 Tʜɪs ᴍᴏᴅᴜᴇ ᴘʀᴏᴠɪᴅᴇs ᴜᴛɪɪᴛʏ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴜsᴇʀs ᴛᴏ ɪɴᴛᴇʀᴀᴄᴛ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ.
+
+/ᴍᴏᴠɪᴇ - ᴛᴏ ɢᴇᴛ ᴀɴʏ ᴍᴏᴠɪᴇ. 
 
 """
